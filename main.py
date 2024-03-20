@@ -37,6 +37,8 @@ def main():
   ## This will print the debt_to_income to the screen
   print('Your debt to income ratio is ' + str(debt_to_income) + '%')
 
+## This function will return the value of a user input morgage value.
+## It will test for both numeric and positive values.
 def get_mortgage():
   mortgage = 0.00
 
@@ -48,6 +50,8 @@ def get_mortgage():
           if mortgage >= 0:
             return mortgage
 
+## This function will return the value of a user input student loan value.
+## It will test for both numeric and positive values.
 def get_student_loans():
   student_loan = 0.00
 
@@ -59,6 +63,8 @@ def get_student_loans():
         if student_loan >= 0:
           return student_loan
 
+## This function will return the value of a user input personal loan value.
+## It will test for both numeric and positive values.
 def get_personal_loans():
   personal_loan = 0.00
 
@@ -70,6 +76,8 @@ def get_personal_loans():
         if personal_loan >= 0:
           return personal_loan
 
+## This function will return the value of a user input car loan value.
+## It will test for both numeric and positive values.
 def get_car_loan():
   car_loan = 0.00
 
@@ -81,6 +89,8 @@ def get_car_loan():
         if car_loan >= 0:
           return car_loan
 
+## This function will return the value of a user input credit card value.
+## It will test for both numeric and positive values.
 def get_credit_cards():
   credit_cards = 0.00
 
@@ -92,6 +102,8 @@ def get_credit_cards():
         if credit_cards >= 0:
           return credit_cards
 
+## This function will return the value of a user other recurring expense value.
+## It will test for both numeric and positive values.
 def get_other_recurring():
   other_recurring = 0.00
 
@@ -104,6 +116,8 @@ def get_other_recurring():
         if other_recurring >= 0:
           return other_recurring
 
+## This function will prompt for the value of a user gross income.
+## It will test for both numeric and positive values.
 def get_gross_income():
   gross_income = 0.00
 
@@ -115,14 +129,16 @@ def get_gross_income():
         if gross_income >= 0:
           return gross_income
 
+## This function will calculate the total sum of all expenses.
 def get_total_payments(expenses):
   total_payments = sum(expenses)
   return total_payments
 
-
+## This function will calculate the current debt to income ratio and return that value
 def get_dti(monthly_total, gross_income):
   dti = (monthly_total / gross_income) * 100
 
   return dti
 
+## This will start the program 
 main()
